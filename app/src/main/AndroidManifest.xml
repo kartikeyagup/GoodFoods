@@ -52,6 +52,10 @@
             android:name=".SignUpWithEmailPage"
             android:label="@string/title_activity_sign_up_with_email_page" >
         </activity>
+        <activity
+            android:name=".LoginWithEmailPage"
+            android:label="@string/title_activity_login_with_email_page" >
+        </activity>
     </application>
 
 </manifest>

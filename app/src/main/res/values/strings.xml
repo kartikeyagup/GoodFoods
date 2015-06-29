@@ -12,4 +12,5 @@
     <string name="title_activity_shopping_bag_page">ShoppingBagPage</string>
     <string name="title_activity_checkout_page">CheckoutPage</string>
     <string name="title_activity_sign_up_with_email_page">SignUpWithEmailPage</string>
+    <string name="title_activity_login_with_email_page">LoginWithEmailPage</string>
 </resources>
