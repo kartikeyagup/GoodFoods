@@ -1,10 +1,15 @@
 package com.goodfoods;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.io.File;
+import java.io.FileOutputStream;
 
 
 public class MainActivity extends Activity {
@@ -13,7 +18,41 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (IfFirstTime())
+        {
+            TextView t1= (TextView) findViewById(R.id.toptitle);
+            t1.setText("first time app opened");
+        }
+        else{
+            TextView t1= (TextView) findViewById(R.id.toptitle);
+            t1.setText("app opened previously");
+        }
     }
+
+    public boolean IfFirstTime()
+    {
+        File file = new File(getFilesDir(), "firsttime.txt");
+        if (file.exists())
+        {
+            return false;
+        }
+        else
+        {
+            Log.d("randomtag", "need to createfile");
+            FileOutputStream outputStream;
+            try {
+                outputStream = openFileOutput("firsttime.txt", Context.MODE_PRIVATE);
+                outputStream.write("hello".getBytes());
+                outputStream.close();
+            } catch (Exception e) {
+                Log.d("randomtag","In catch");
+                e.printStackTrace();
+            }
+        }
+        return true;
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
