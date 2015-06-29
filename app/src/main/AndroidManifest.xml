@@ -24,6 +24,34 @@
             android:name=".WelcomePage"
             android:label="@string/title_activity_welcome_page" >
         </activity>
+        <activity
+            android:name=".StorePage"
+            android:label="@string/title_activity_store_page" >
+        </activity>
+        <activity
+            android:name=".ProductInfoPage"
+            android:label="@string/title_activity_product_info_page" >
+        </activity>
+        <activity
+            android:name=".FaqPage"
+            android:label="@string/title_activity_faq_page" >
+        </activity>
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/title_activity_about_page" >
+        </activity>
+        <activity
+            android:name=".ShoppingBagPage"
+            android:label="@string/title_activity_shopping_bag_page" >
+        </activity>
+        <activity
+            android:name=".CheckoutPage"
+            android:label="@string/title_activity_checkout_page" >
+        </activity>
+        <activity
+            android:name=".SignUpWithEmailPage"
+            android:label="@string/title_activity_sign_up_with_email_page" >
+        </activity>
     </application>
 
 </manifest>

@@ -5,4 +5,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login_page">LoginPage</string>
     <string name="title_activity_welcome_page">WelcomePage</string>
+    <string name="title_activity_store_page">StorePage</string>
+    <string name="title_activity_product_info_page">ProductInfoPage</string>
+    <string name="title_activity_faq_page">FaqPage</string>
+    <string name="title_activity_about_page">AboutPage</string>
+    <string name="title_activity_shopping_bag_page">ShoppingBagPage</string>
+    <string name="title_activity_checkout_page">CheckoutPage</string>
+    <string name="title_activity_sign_up_with_email_page">SignUpWithEmailPage</string>
 </resources>
