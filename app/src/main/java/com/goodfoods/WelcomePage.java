@@ -27,6 +27,7 @@ public class WelcomePage extends FragmentActivity  {
      */
     private static final int NUM_PAGES = 3;
 
+
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
      * and next wizard steps.
@@ -98,7 +99,7 @@ public class WelcomePage extends FragmentActivity  {
 
     public void goon(View view)
     {
-        Intent bleh = new Intent(this,LoginPage.class);
+        Intent bleh = new Intent(this,FaqPage.class);
         startActivity(bleh);
     }
 

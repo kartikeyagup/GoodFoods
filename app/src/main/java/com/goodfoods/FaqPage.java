@@ -5,35 +5,46 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class FaqPage extends Activity {
+
+    private final int CELL_DEFAULT_HEIGHT = 200;
+    private final int NUM_OF_CELLS = 30;
+
+    private ExpandingListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq_page);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_faq_page, menu);
-        return true;
-    }
+        ExpandableListItem[] values = new ExpandableListItem[] {
+                new ExpandableListItem("Chameleon", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                        "answer goes here"),
+                new ExpandableListItem("Rock", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                        "answer goes here"),
+                new ExpandableListItem("Flower", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                        "answer goes here"),
+        };
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        List<ExpandableListItem> mData = new ArrayList<>();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        for (int i = 0; i < NUM_OF_CELLS; i++) {
+            ExpandableListItem obj = values[i % values.length];
+            mData.add(new ExpandableListItem(obj.getTitle(), obj.getImgResource(),
+                    obj.getCollapsedHeight(), obj.getText()));
         }
 
-        return super.onOptionsItemSelected(item);
+        CustomArrayAdapter adapter = new CustomArrayAdapter(this, R.layout.list_view_item, mData);
+
+        mListView = (ExpandingListView)findViewById(R.id.main_list_view);
+        mListView.setAdapter(adapter);
+        mListView.setDivider(null);
     }
 }
