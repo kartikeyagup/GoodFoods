@@ -15,7 +15,7 @@ import java.util.List;
 public class FaqPage extends Activity {
 
     private final int CELL_DEFAULT_HEIGHT = 200;
-    private final int NUM_OF_CELLS = 30;
+    private final int NUM_OF_CELLS = 12;
 
     private ExpandingListView mListView;
 
@@ -25,11 +25,11 @@ public class FaqPage extends Activity {
         setContentView(R.layout.activity_faq_page);
 
         ExpandableListItem[] values = new ExpandableListItem[] {
-                new ExpandableListItem("Chameleon", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                new ExpandableListItem("Question Goes here", R.drawable.batman, CELL_DEFAULT_HEIGHT,
                         "answer goes here"),
-                new ExpandableListItem("Rock", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                new ExpandableListItem("Question Goes here", R.drawable.batman, CELL_DEFAULT_HEIGHT,
                         "answer goes here"),
-                new ExpandableListItem("Flower", R.drawable.batman, CELL_DEFAULT_HEIGHT,
+                new ExpandableListItem("Question Goes here", R.drawable.batman, CELL_DEFAULT_HEIGHT,
                         "answer goes here"),
         };
 
