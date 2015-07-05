@@ -24,13 +24,13 @@ public class MainActivity extends Activity {
         {
             TextView t1= (TextView) findViewById(R.id.toptitle);
             t1.setText("first time app opened");
-            Intent bleh = new Intent(this,WelcomePage.class);
+            Intent bleh = new Intent(this,PageNavigator.class);
             startActivity(bleh);
         }
         else{
             TextView t1= (TextView) findViewById(R.id.toptitle);
             t1.setText("app opened previously");
-            Intent bleh = new Intent(this,WelcomePage.class);
+            Intent bleh = new Intent(this,PageNavigator.class);
 //            Intent bleh = new Intent(this,LoginPage.class);
             startActivity(bleh);
 

@@ -1,6 +1,5 @@
 package com.goodfoods;
 
-import android.app.Activity;
 //import android.support.v7.app.ActionBarActivity;
 //import android.app.Fragment;
 //import android.app.FragmentManager;
@@ -10,13 +9,13 @@ import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
+//import android.support.v4.app.NavUtils;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
+//import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 

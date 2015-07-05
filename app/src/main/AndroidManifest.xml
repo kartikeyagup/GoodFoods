@@ -56,6 +56,10 @@
             android:name=".LoginWithEmailPage"
             android:label="@string/title_activity_login_with_email_page" >
         </activity>
+        <activity
+            android:name=".PageNavigator"
+            android:label="@string/title_activity_page_navigator" >
+        </activity>
     </application>
 
 </manifest>
