@@ -56,4 +56,9 @@ public class PageNavigator extends Activity {
 
     public void GoToExit(View view) {
     }
+
+    public void GoToStore(View view) {
+        Intent bleh = new Intent(this,LocalityPage.class);
+        startActivity(bleh);
+    }
 }

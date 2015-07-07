@@ -60,6 +60,10 @@
             android:name=".PageNavigator"
             android:label="@string/title_activity_page_navigator" >
         </activity>
+        <activity
+            android:name=".LocalityPage"
+            android:label="@string/title_activity_locality_page" >
+        </activity>
     </application>
 
 </manifest>
