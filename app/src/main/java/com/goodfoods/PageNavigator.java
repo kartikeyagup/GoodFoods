@@ -55,6 +55,8 @@ public class PageNavigator extends Activity {
     }
 
     public void GoToExit(View view) {
+        Intent bleh = new Intent(this, CheckoutPage.class);
+        startActivity(bleh);
     }
 
     public void GoToStore(View view) {
