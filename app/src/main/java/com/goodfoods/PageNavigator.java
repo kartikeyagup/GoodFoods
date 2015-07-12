@@ -63,4 +63,9 @@ public class PageNavigator extends Activity {
         Intent bleh = new Intent(this,LocalityPage.class);
         startActivity(bleh);
     }
+
+    public void GoToLogin(View view) {
+        Intent bleh = new Intent(this,LoginPage.class);
+        startActivity(bleh);
+    }
 }
