@@ -22,5 +22,6 @@
         <item>hulla</item>
         <item>maar dunga</item>
     </string-array>
+    <string name="title_activity_google_login">GoogleLogin</string>
 
 </resources>

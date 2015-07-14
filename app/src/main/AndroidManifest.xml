@@ -2,11 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.goodfoods" >
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -63,6 +69,10 @@
         <activity
             android:name=".LocalityPage"
             android:label="@string/title_activity_locality_page" >
+        </activity>
+        <activity
+            android:name=".GoogleLogin"
+            android:label="@string/title_activity_google_login" >
         </activity>
     </application>
 
